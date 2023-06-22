@@ -25,7 +25,7 @@ stage('Release') {
 steps {
 sh '''
 oc project qglytw-greetings
-oc start-build greeting-console --follow --wait --timeout=30s
+oc start-build greeting-console 
 '''
 }
 }
